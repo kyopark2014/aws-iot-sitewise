@@ -11,7 +11,7 @@ AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으
 
 - Device에서 MQTT로 IoT Core로 데이터를 전송할때, Rule을 등록하여 SiteWise로 전송
 
-- [OPC-UA](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/opcua-data-acquisition.html)를 지원하는 디바이스에서 IoT SiteWise Edge Gateway로 데이터를 전달한후 IoT SiteWise에서 수집
+- [OPC-UA](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/opcua-data-acquisition.html) 서버에서 IoT SiteWise Edge Gateway로 데이터를 전달한후 IoT SiteWise에서 수집
 
 - 디바이스에서 AWS SDK를 이용해 IoT SiteWise로 데이터를 전송 
 
