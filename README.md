@@ -7,3 +7,7 @@ AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으
 ## Price
 
 ![image](https://user-images.githubusercontent.com/52392004/178087905-0ae2fc25-050f-465f-bdb4-433a50516f71.png)
+
+## Workshop
+
+[AWS IOT SITEWISE WORKSHOP](https://iot-sitewise.workshop.aws/en/)
