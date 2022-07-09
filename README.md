@@ -28,9 +28,35 @@ AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으
 
 ## Model
 
-- 모델은 Asset들의 구조
+- 모델은 Asset들의 구조를 4가지 asset properties로 표현합니다. Attribute, Measurement, Transform, Metric으로 구성됩니다.
+
+
+
 
 - Models are structures that enforce a specific model of properties and hierarchies for all instances of each asset. You must create every asset from a model.
+
+
+```java
+Model name: Machine
+Property {
+  Attribute { Name: string }
+  Measurement{ Widget Output: INTEGER }
+  Measurement{ Temperature_in_C: FLOAT } 
+  Transform { 
+    Temperature_in_F: FLOAT;
+        value = 9/5 * tempC + 32 
+    }
+  Metric { 
+	  Efficiency: FLOAT;
+    value = Widget Output/Capacity
+    window = 1 hour
+  }
+}
+CompositeModel {
+  Name : Temperature_Alarm;
+  Type : AWS/ALARM
+}
+```
 
 - 아래 그림은 Wind turbine이 하나의 Asset이 되어서, 온도(Temperature), RPM(프로펠러 회전 속도), 전원(Power)와 같은 Asset properties를 측정합니다. 각각의 stream은 아래와 같은 고유한 alias를 가지고 있습니다. 예) 3번 Wind Farm의 7번 터빈. 
 
