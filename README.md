@@ -28,7 +28,7 @@ AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으
 
 ## Model
 
-- 모델은 Asset들의 구조를 4가지 asset properties로 표현합니다. Attribute, Measurement, Transform, Metric으로 구성됩니다.
+- 모델은 Asset들의 구조를 4가지 asset properties로 표현합니다. Attribute (Static Descriptions), Measurement (측정 데이터), Transform, Metric 으로 구성됩니다.
 
 
 
