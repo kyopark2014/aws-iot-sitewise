@@ -64,6 +64,11 @@ CompositeModel {
 
 ![image](https://user-images.githubusercontent.com/52392004/178095017-1f00f14f-4126-4692-8fe0-69e216870159.png)
 
+## Retrieve data
+
+![image](https://user-images.githubusercontent.com/52392004/178110715-941a0adb-64c0-43fc-9c7f-2eb8e2036b3a.png)
+
+
 
 ## Price
 
