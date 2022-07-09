@@ -47,7 +47,7 @@ Property {
         value = 9/5 * tempC + 32 
     }
   Metric { 
-	  Efficiency: FLOAT;
+    Efficiency: FLOAT;
     value = Widget Output/Capacity
     window = 1 hour
   }
