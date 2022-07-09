@@ -5,6 +5,19 @@
 AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으고, 저장하고, 정리하여 모니터링하는 managed service입니다. 트래픽이 늘어날 경우에 자동으로 scale up하고 유지보수등의 수고를 AWS에서 해주므로 비지니스 로직 개발에 집중할 수 있습니다. 
 
 
+## Ingest Data
+
+아래와 같이 3가지 방식으로 데이터를 수집할 수 있습니다.
+
+- Device에서 MQTT로 IoT Core로 데이터를 전송할때, Rule을 등록하여 SiteWise로 전송
+
+- OPC-UA를 지원하는 디바이스에서 IoT SiteWise Edge Gateway로 데이터를 전달한후 IoT SiteWise에서 수집
+
+- 디바스에서 AWS SDK를 이용해 IoT SiteWise로 데이터를 전송 
+
+![image](https://user-images.githubusercontent.com/52392004/178109818-dec45d94-8165-4601-93a4-d4ec0d516f99.png)
+
+
 ## Asset
 
 - Asset은 디바이스, 장비의 한 부분 또는 프로세스로서 SiteWise로 Data Stream을 전송합니다.
