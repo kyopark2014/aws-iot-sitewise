@@ -16,7 +16,7 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 ### Edge Gateway
 
-SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 데이터를 업로드 할 수 있습니다. 
+SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 업로드 할 수 있습니다. 
 
 
 #### Benefits
