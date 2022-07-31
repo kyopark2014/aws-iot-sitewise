@@ -13,6 +13,12 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 - Asset model은 asset의 형식을 표준화하는 선언적 구조입니다. Asset model은 동일한 유형의 여러 자산에 대해 일관된 정보를 적용하므로 장치 그룹을 나타내는 자산의 데이터를 처리할 수 있습니다.
 
+
+### Edge Gateway
+
+SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 데이터를 업로드 할 수 있습니다. 
+
+
 #### Benefits
 
 - 여러 장치들로부터 데이터를 안정적으로 데이터를 모으고, 구조화 하며, 다른 소프트웨어 없이도 Sidtewise를 이용하여 데이터를 분석할 수 있습니다. 
