@@ -13,6 +13,17 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 - Asset model은 asset의 형식을 표준화하는 선언적 구조입니다. Asset model은 동일한 유형의 여러 자산에 대해 일관된 정보를 적용하므로 장치 그룹을 나타내는 자산의 데이터를 처리할 수 있습니다.
 
+#### Benefits
+
+- 여러 장치들로부터 데이터를 안정적으로 데이터를 모으고, 구조화 하며, 다른 소프트웨어 없이도 Sidtewise를 이용하여 데이터를 분석할 수 있습니다. 
+
+- 원격 모니터링을 통해 빠르게 문제를 확인 할 수 있습니다. 
+
+- Improve cross-facility processes with a central data source
+
+- Process and monitor data on-premises for shop floor applications
+
+
 ## Ingest Data
 
 아래와 같이 3가지 방식으로 데이터를 수집할 수 있습니다.
@@ -37,9 +48,6 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 ## Model
 
 - 모델은 Asset들의 구조를 4가지 asset properties로 표현합니다. Attribute (Static Descriptions), Measurement (측정 데이터), Transform, Metric 으로 구성됩니다.
-
-
-
 
 - Models are structures that enforce a specific model of properties and hierarchies for all instances of each asset. You must create every asset from a model.
 
@@ -85,3 +93,6 @@ CompositeModel {
 ## Workshop
 
 [AWS IOT SITEWISE WORKSHOP](https://iot-sitewise.workshop.aws/en/)
+
+[AWS IoT SiteWise workshop for beginners (Korean)](https://catalog.us-east-1.prod.workshops.aws/workshops/b74efd43-8535-47fa-b88c-f463f032e3b9/ko-KR)
+
