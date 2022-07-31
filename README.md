@@ -2,8 +2,16 @@
 
 여기서는 IoT SiteWise에 대해 설명합니다. 
 
+![image](https://user-images.githubusercontent.com/52392004/182048958-602e34e9-64e1-4f5c-8b64-51c596bacf94.png)
+
+
 AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으고, 저장하고, 정리하여 모니터링하는 managed service입니다. 트래픽이 늘어날 경우에 자동으로 scale up하고 유지보수등의 수고를 AWS에서 해주므로 비지니스 로직 개발에 집중할 수 있습니다. 
 
+AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성할 수 있습니다. 
+
+- Asset은 디바이스, 장비 또는 하나 이상의 데이터 스트림을 AWS 클라우드에 업로드하는 프로세스를 나타냅니다. Asset은 asset model로 부터 생성되어야 합니다. 
+
+- Asset model은 asset의 형식을 표준화하는 선언적 구조입니다. Asset model은 동일한 유형의 여러 자산에 대해 일관된 정보를 적용하므로 장치 그룹을 나타내는 자산의 데이터를 처리할 수 있습니다.
 
 ## Ingest Data
 
