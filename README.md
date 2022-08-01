@@ -16,7 +16,12 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 ### Edge Gateway
 
-SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 업로드 할 수 있습니다. 
+- SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 업로드 할 수 있습니다. 
+
+- 들어온 데이터중에 필요한 데이터만 업로드 할 수 있습니다. 예로써 들어온 데이터가 초당 10개인데 필요한 데이터가 분당 1개일때에 SitieWise가 데이터를 필터링하여 필요한 데이터를 전송합니다.
+
+- 인터넷 연결이 원할하지 않거나, Bandwidth가 충분하지 않은 경우에 데이터 전송을 최적화 할 수 있습니다. 이 경우에 Cloud에 저장되는 데이터를 최적화 할 수 있습니다. 
+
 
 
 #### Benefits
@@ -101,4 +106,7 @@ CompositeModel {
 [AWS IOT SITEWISE WORKSHOP](https://iot-sitewise.workshop.aws/en/)
 
 [AWS IoT SiteWise workshop for beginners (Korean)](https://catalog.us-east-1.prod.workshops.aws/workshops/b74efd43-8535-47fa-b88c-f463f032e3b9/ko-KR)
+
+[AWS on Air 2020: AWS What’s Next ft. AWS IoT SiteWise Edge](https://www.youtube.com/watch?v=SetcWz3-ezA)
+
 
