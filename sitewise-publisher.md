@@ -2,6 +2,20 @@
 
 Greengrass의 Component인 IoT Sitewise publisher(aws.iot.SiteWisePublisher)를 이용하여 edge에서 데이터를 처리하여 AWS Cloud로 전송할 수 있습니다. 
 
+## 설치
+
+1) [[AWS IoT] - [Manage] - [Greengrass devices] - [Components] - [Public components]](https://ap-northeast-2.console.aws.amazon.com/iot/home?region=ap-northeast-2#/greengrass/v2/components/public)에서 aws.iot.SiteWiseEdgePublisher을 선택합니다. 
+
+2) 상단의 [Deploy]를 선택하고 Deployment를 선택하여 설치를 진행합니다.
+
+3) 설치후 아래 명령어로 "com.amazon.iot.sitewise.component.Publisher"가 잘 설치되었는지 확인합니다. 
+
+```c
+$ ps aux |grep green
+root      3232  0.0  0.0  70356  4360 ?        S    22:05   0:00 sudo -n -E -H -u ggc_user -g ggc_group -- sh -c java -cp /greengrass/v2/packages/artifacts/aws.iot.SiteWiseEdgePublisher/2.2.0/IotSiteWisePublisher-1.0-super.jar com.amazon.iot.sitewise.component.Publisher 
+ggc_user  3235  0.0  0.0   4632   780 ?        S    22:05   0:00 sh -c java -cp /greengrass/v2/packages/artifacts/aws.iot.SiteWiseEdgePublisher/2.2.0/IotSiteWisePublisher-1.0-super.jar com.amazon.iot.sitewise.component.Publisher 
+ggc_user  3236  0.9  2.6 4719344 207632 ?      Sl   22:05   0:06 java -cp /greengrass/v2/packages/artifacts/aws.iot.SiteWiseEdgePublisher/2.2.0/IotSiteWisePublisher-1.0-super.jar com.amazon.iot.sitewise.component.Publisher
+```
 
 ## Recipe
 
