@@ -22,6 +22,16 @@ ggc_user  3236  0.9  2.6 4719344 207632 ?      Sl   22:05   0:06 java -cp /green
 AWS IoT Greengrass stream manager로부터 [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchPutAssetPropertyValue.html) 메시지를 읽습니다. 
 
 
+## Log 확인
+
+```java
+$ sudo tail /greengrass/v2/logs/aws.iot.SiteWiseEdgePublisher.log
+2022-08-03T22:33:01.552Z [INFO] (Copier) aws.iot.SiteWiseEdgePublisher: stdout. [INFO ] 2022-08-03 22:33:01.552 [MetricService-0] CapabilityMetricService - {"message":"Emitting metric (IoTSiteWisePublisher.Heartbeat) to local MQTT topic: IoTSiteWisePublisher/diagnostics"}. {scriptName=services.aws.iot.SiteWiseEdgePublisher.lifecycle.Startup.Script, serviceName=aws.iot.SiteWiseEdgePublisher, currentState=RUNNING}
+2022-08-03T22:33:01.553Z [INFO] (Copier) aws.iot.SiteWiseEdgePublisher: stdout. [INFO ] 2022-08-03 22:33:01.553 [MetricService-0] CapabilityMetricService - {"message":"Emitting diagnostic name=IoTSiteWisePublisher.DroppedCount, value=0, timestamp=2022-08-03T22:32:02.882870Z, dimensions=[CapabilityMetricDimension{name=ThingName, value=GreengrassQuickStartCore-18163f7ac3e}]"}. {scriptName=services.aws.iot.SiteWiseEdgePublisher.lifecycle.Startup.Script, serviceName=aws.iot.SiteWiseEdgePublisher, currentState=RUNNING}
+2022-08-03T22:33:01.554Z [INFO] (Copier) aws.iot.SiteWiseEdgePublisher: stdout. [INFO ] 2022-08-03 22:33:01.554 [MetricService-0] CapabilityMetricService - {"message":"Emitting metric (IoTSiteWisePublisher.DroppedCount) to local MQTT topic: IoTSiteWisePublisher/diagnostics"}. {scriptName=services.aws.iot.SiteWiseEdgePublisher.lifecycle.Startup.Script, serviceName=aws.iot.SiteWiseEdgePublisher, currentState=RUNNING}
+2022-08-03T22:33:01.555Z [INFO] (Copier) aws.iot.SiteWiseEdgePublisher: stdout. [INFO ] 2022-08-03 22:33:01.555 [MetricService-0] CapabilityMetricService - {"message":"Emitting diagnostic name=IoTSiteWisePublisher.PublisherTrailingCheckpoint, value=0, timestamp=2022-08-03T22:32:02.882870Z, dimensions=[CapabilityMetricDimension{name=ThingName, value=GreengrassQuickStartCore-18163f7ac3e}]"}. {scriptName=services.aws.iot.SiteWiseEdgePublisher.lifecycle.Startup.Script, serviceName=aws.iot.SiteWiseEdgePublisher, currentState=RUNNING}
+```
+
 ## Recipe
 
 ```java
