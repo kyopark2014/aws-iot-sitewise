@@ -17,6 +17,11 @@ ggc_user  3235  0.0  0.0   4632   780 ?        S    22:05   0:00 sh -c java -cp 
 ggc_user  3236  0.9  2.6 4719344 207632 ?      Sl   22:05   0:06 java -cp /greengrass/v2/packages/artifacts/aws.iot.SiteWiseEdgePublisher/2.2.0/IotSiteWisePublisher-1.0-super.jar com.amazon.iot.sitewise.component.Publisher
 ```
 
+## Input data
+
+AWS IoT Greengrass stream manager로부터 [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchPutAssetPropertyValue.html) 메시지를 읽습니다. 
+
+
 ## Recipe
 
 ```java
