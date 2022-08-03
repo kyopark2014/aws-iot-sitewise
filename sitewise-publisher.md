@@ -124,3 +124,5 @@ $ sudo tail /greengrass/v2/logs/aws.iot.SiteWiseEdgePublisher.log
 ## Reference
 
 [IoT SiteWise publisher](https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise-publisher-component.html)
+
+[CONFIGURE ASSET MODEL](https://iot-sitewise-edge.workshop.aws/130_prepare_for_edge_30/10_configure_asset_model.html)
