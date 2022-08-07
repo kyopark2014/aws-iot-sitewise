@@ -1,10 +1,10 @@
 # AWS IoT SiteWise
 
-여기서는 IoT SiteWise에 대해 설명합니다. AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으고, 저장하고, 정리하여 모니터링하는 managed service입니다. 트래픽이 늘어날 경우에 자동으로 scale up하고 유지보수등의 수고를 AWS에서 해주므로 비지니스 로직 개발에 집중할 수 있습니다. 
+여기서는 IoT SiteWise에 대해 설명합니다. AWS IoT SiteWise는 industrial 장비에서 수집된 데이터를 쉽게 모으고, 저장하고, 정리하여 모니터링하는 managed service입니다. 트래픽이 늘어날 경우에 자동으로 scale up하고 유지보수 등의 수고를 AWS에서 해주므로 비지니스 로직 개발에 집중할 수 있습니다. 
 
 AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성할 수 있습니다. 
 
-- Asset은 디바이스, 장비 또는 하나 이상의 데이터 스트림을 AWS 클라우드에 업로드하는 프로세스를 나타냅니다. Asset은 asset model로 부터 생성되어야 합니다. 
+- Asset은 디바이스, 장비 또는 하나 이상의 데이터 스트림들을 AWS 클라우드에 업로드하는 프로세스를 나타냅니다. Asset은 asset model로 부터 생성되어야 합니다. 
 
 - Asset model은 asset의 형식을 표준화하는 선언적 구조입니다. Asset model은 동일한 유형의 여러 자산에 대해 일관된 정보를 적용하므로 장치 그룹을 나타내는 자산의 데이터를 처리할 수 있습니다.
 
@@ -18,16 +18,16 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 - SiteWisesms는 on-premise gateway로 local 데이터 서버로부터 데이터를 모으고, 선택된 데이터를 IoT Core와 SiteWise API를 통해 업로드 할 수 있습니다. 
 
-- 들어온 데이터중에 필요한 데이터만 업로드 할 수 있습니다. 예로써 들어온 데이터가 초당 10개인데 필요한 데이터가 분당 1개일때에 SitieWise가 데이터를 필터링하여 필요한 데이터를 전송합니다.
+- 들어온 데이터중에 필요한 데이터만 업로드 할 수 있습니다. 예로써 들어온 데이터가 초당 10개인데 필요한 데이터가 분당 1개일라면 SitieWise가 데이터를 필터링하여 필요한 분당 1개의 데이터를 전송합니다.
 
-- 인터넷 연결이 원할하지 않거나, Bandwidth가 충분하지 않은 경우에 데이터 전송을 최적화 할 수 있습니다. 이 경우에 Cloud에 저장되는 데이터의 양도 최적화 할 수 있습니다. 
+- 인터넷 연결이 원활하지 않거나, Bandwidth가 충분하지 않은 경우에 데이터 전송을 최적화 할 수 있습니다. 이 경우에 Cloud에 저장되는 데이터의 양도 최적화 할 수 있습니다. 
 
 - 최소사양: 4 Cores, 16GB RAM, 256MB Storage
 
 
 #### Benefits
 
-- 여러 장치들로부터 데이터를 안정적으로 데이터를 모으고, 구조화 하며, 다른 소프트웨어 없이도 Sidtewise를 이용하여 데이터를 분석할 수 있습니다. 
+- 여러 장치들로부터 데이터를 안정적으로 데이터를 모으고, 구조화 하며, 다른 소프트웨어 없이도 SiteWise를 이용하여 데이터를 분석할 수 있습니다. 
 
 - 원격 모니터링을 통해 빠르게 문제를 확인 할 수 있습니다. 
 
@@ -42,7 +42,7 @@ AWS IoT SiteWise asset을 사용하여 산업 운영의 가상 표현을 생성�
 
 - Device에서 MQTT로 IoT Core로 데이터를 전송할때, Rule을 등록하여 SiteWise로 전송
 
-- [OPC-UA](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/opcua-data-acquisition.html) 서버에서 IoT SiteWise Edge Gateway로 데이터를 전달한후 IoT SiteWise에서 수집
+- [OPC-UA](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/opcua-data-acquisition.html) 서버에서 IoT SiteWise Edge Gateway로 데이터를 전달한 후 IoT SiteWise에서 수집
 
 - 디바이스에서 AWS SDK를 이용해 IoT SiteWise로 데이터를 전송 
 
