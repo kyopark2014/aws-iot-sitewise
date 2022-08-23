@@ -100,8 +100,11 @@ CompositeModel {
 
 ## Price
 
+서울기준 가격표는 아래와 같습니다.
+
 ![image](https://user-images.githubusercontent.com/52392004/178087905-0ae2fc25-050f-465f-bdb4-433a50516f71.png)
 
+미국기준 가격표는 아래와 같습니다. 
 
 ![image](https://user-images.githubusercontent.com/52392004/186050313-19628c21-b22d-4908-80ac-fb698abbd9a2.png)
 
